@@ -1,0 +1,42 @@
+h1{
+    color:aqua;
+    background: whitesmoke
+}
+
+p{
+    color:blue;
+    background: wheat
+}
+
+#para1{
+    color:blueviolet;
+    background: chartreuse;
+}
+
+#para2{
+    color:violet
+}
+
+.content{
+    color:honeydew;
+    background:lightskyblue
+}
+
+button{
+    color:darkorchid;
+}
+
+div{
+    width:300px;
+    height:200px;
+    background:rgb(0, 128, 38);
+    margin-left:15px;
+    margin-top:15px;
+    padding-left:50px;
+    padding-top:50px;
+    border:5px solid;
+    border-color: red;   
+}
+.white{
+    color:#fff
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .tab-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            justify-content: space-around;
+            background-color: #4CAF50;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: #45a049;
+        }
+        .tab.active {
+            background-color: #333;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            background-color: white;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <div class="tab active" data-tab="1">Tab 1</div>
+            <div class="tab" data-tab="2">Tab 2</div>
+            <div class="tab" data-tab="3">Tab 3</div>
+        </div>
+        <div id="tab-1" class="tab-content active">
+            <h2>Content for Tab 1</h2>
+            <p>This is the content of the first tab. You can put any HTML content here.</p>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <h2>Content for Tab 2</h2>
+            <p>This is the content of the second tab. You can customize it as needed.</p>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <h2>Content for Tab 3</h2>
+            <p>This is the content of the third tab. Add more details or sections as required.</p>
+        </div>
+    </div>
+
+    <script>
+        // Get all tab and content elements
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and tab contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(tc => tc.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding tab content
+                tab.classList.add('active');
+                document.getElementById(`tab-${tab.dataset.tab}`).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

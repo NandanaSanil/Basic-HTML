@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form name="myForm">
+            <label for="email">Email: </label>
+            <input name="email" type="text" id="email" size="30">
+            <br><br>
+            <input type="submit" value="Submit" onclick="validateForm()">
+        </form>
+
+        <script>
+            function validateForm() {
+
+                var email = document.forms["myForm"]["email"].value;
+
+
+                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+                if (!email.match(emailPattern)) {
+                    alert("Please enter a valid email address!");
+                    // return false;
+                }
+
+                return true;
+            }
+        </script>
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>

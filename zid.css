@@ -1,0 +1,9 @@
+div {
+    background-color: #96bda9;
+    border-width: 3px;
+    border-style: solid;
+    border-color: hsl(7, 100%, 50%);
+    height: 600px;
+    width: 500px;
+    padding-top: 20px;
+}

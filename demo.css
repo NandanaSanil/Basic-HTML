@@ -1,0 +1,28 @@
+.header{
+    height:150px;
+    width:100%;
+    background: rgb(252, 166, 6);
+}
+.left-content{
+    height:400px;
+    width:20%;
+    background: rgb(233, 122, 196);
+    float:left
+}
+.right-content{
+    height:400px;
+    width:80%;
+    background: rgb(113, 199, 248);
+    float:left
+}
+.content{
+    height:400px
+}
+.footer{
+    height:150px;
+    width:100%;
+    background:rgb(230, 64, 64)
+}
+body{
+    margin:0;
+}

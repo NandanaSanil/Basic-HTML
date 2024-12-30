@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script>
+        function calculateAge() {
+            // Get the input date value
+            let dob = document.getElementById("dob").value;
+
+            // Convert it to a Date object
+            let dobDate = new Date(dob);
+
+            // Get today's date
+            let today = new Date();
+
+            // Calculate the difference in years
+            let age = today.getFullYear() - dobDate.getFullYear();
+
+            // Adjust if the birthday hasn't occurred yet this year
+            let monthDifference = today.getMonth() - dobDate.getMonth();
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < dobDate.getDate())) {
+                age--;
+            }
+
+            // Display the calculated age
+            document.getElementById("age").textContent = "Age: " + age;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Age Calculator</h1>
+
+    <label for="dob">Enter your Date of Birth:</label>
+    <input type="date" id="dob" onchange="calculateAge()"><br><br>
+
+    <p id="age">Age: </p>
+</body>
+
+</html>

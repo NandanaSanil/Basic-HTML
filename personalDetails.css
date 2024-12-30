@@ -1,0 +1,13 @@
+#h1{
+    color:red;
+    background-color:azure ;
+}
+
+.common{
+    background-color: azure;
+}
+
+button:hover{
+    background-color: lightblue;
+    border:3px;
+}

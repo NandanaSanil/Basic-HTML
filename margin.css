@@ -1,0 +1,58 @@
+h1 {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-weight: bolder;
+    color: red;
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    margin: auto;
+    /* padding: 20px 50px 20px 50px;  */
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    display: flex;
+
+}
+
+h2 {
+    color: white;
+    background-color: rgb(15, 94, 90);
+    text-align: center;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 211, 212);
+}
+
+
+#name {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
+}
+
+.box {
+    border: 2px double blue;
+    border-radius: 5px;
+    color: rgb(250, 165, 7);
+    text-shadow: 2px 2px 4px rgba(243, 241, 245, 0.986);
+    /* align-items: center; */
+    /* text-align: center;
+    justify-content: center; */
+}
+
+#d1{
+    height:200px;
+    width: 260px;
+    background-color: rgb(15, 231, 98);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 12dvh;
+    box-shadow: 0 4px 8px rgba(8, 60, 202, 0.904);;
+}
